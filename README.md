@@ -4,7 +4,9 @@ INTRODUCTION:
 This report contains results of code all relating to an instance of monitoring traffic. 
 The pipeline collects a diag port .pcap, network port .pcap, and a power.csv
 
+--
 Note on usage: Related code not yet provided for usage. Preliminary results are shown only.
+--
 
 USAGE:
 
@@ -21,19 +23,21 @@ This will then open 3 other windows. These windows will include:
 The following ouput will be:
 
 Diag/   --
+
 	[FILE_NAME]/ 
 	     |
 	     diag[FILE_NAME].pcap : contains the diag port log
 	     diagTime[FILE_NAME].txt: contains the start time to be used for mapping  
+		 
 Download/-- 
+
 	[FILE_NAME]/
 	    |
 	    download[FILE_NAME].pcap : Contains tshark captured traffic from the network interface
 	    downloadTime[FILE_NAME].pcap : Contaitns start time 
+		
 Power/--
+
 	[FILE_NAME]/
 	    |
 		[FILE_NAME].csv : contains rows with Time, Voltage, Amps, and Watts (Power)
-
-		^^ all can be resolved by either reboot, or reseating the ribbon cable.
-		The alias is simply 'check'
